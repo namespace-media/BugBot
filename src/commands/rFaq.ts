@@ -96,6 +96,8 @@ async function execute(interaction: ChatInputCommandInteraction) {
           
           You can select - and activate your premium servers in your User Settings:
           https://xp-bot.net/me/premium
+
+          First you must link your [Discord Account to Patreon](https://support.patreon.com/hc/en-us/articles/212052266-How-do-I-connect-Discord-to-Patreon-Patron-) before getting started.
           
           _Once it lights up blue, its active! No need for seperate saving._`
         )
