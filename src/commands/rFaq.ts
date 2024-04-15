@@ -96,8 +96,8 @@ async function execute(interaction: ChatInputCommandInteraction) {
           
           You can select - and activate your premium servers in your User Settings:
           https://xp-bot.net/me/premium
-          
-          _Once it lights up blue, its active! No need for seperate saving._`
+
+          First you must link your [Discord Account to Patreon](https://support.patreon.com/hc/en-us/articles/212052266-How-do-I-connect-Discord-to-Patreon-Patron-) before getting started.`
         )
         .setImage(`https://img.namespace.media/images/activatepremium.png`);
       break;
@@ -128,8 +128,6 @@ async function execute(interaction: ChatInputCommandInteraction) {
           }
 
         )
-      
-        
         
         .setImage(`https://img.namespace.media/images/2021/06/16/bsp3.png`);
       break;
@@ -147,6 +145,7 @@ async function execute(interaction: ChatInputCommandInteraction) {
         );
       break;
     }
+    
     case 'other':
       embed
         .setTitle(`Let's get you started!`)
