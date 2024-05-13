@@ -32,6 +32,10 @@ const slash: SlashCommandBuilder = new SlashCommandBuilder()
           name: `My newly created roles are not showing up in the Dashboard!`,
           value: `rolecache`
         },
+        {
+          name: "Why are members gaining large abnormal amounts of XP in VC?",
+          value: "vcxp"
+        },
         { name: `other...`, value: `other` }
       )
       .setName(`question`)
@@ -145,7 +149,14 @@ async function execute(interaction: ChatInputCommandInteraction) {
         );
       break;
     }
-    
+    case "vcxp": {
+      embed
+        .setTitle("Why are members gaining large abnormal amounts of XP in VC?")
+        .setDescription(
+          "When XP is not responding, it incorrectly calculates XP for users present in Voice Channels. It is a known issue and will be fixed for the incoming XP9 (No ETA on its arrival). \n\n To temporarily fix this, you can either disable the VC XP module or revert the changes (manually) made before XP became unresponsive."
+        )
+      break;
+    }
     case 'other':
       embed
         .setTitle(`Let's get you started!`)
